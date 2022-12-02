@@ -20,7 +20,13 @@ def buscarEntrada(laberinto):
             if laberinto[i][j] == 'E':
                 return (i,j)
 
+def buscarSalida(laberinto):
+    for i in range(len(laberinto)):
+        for j in range(len(laberinto[i])):
+            if laberinto[i][j] == 'S':
+                return (i,j)
 
+imprimirLaberinto(laberinto)
 
 
 
