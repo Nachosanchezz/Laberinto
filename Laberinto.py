@@ -14,6 +14,12 @@ def imprimirLaberinto(laberinto):
             print(j, end=" ")
         print("\n")
 
+def buscarEntrada(laberinto):
+    for i in range(len(laberinto)):
+        for j in range(len(laberinto[i])):
+            if laberinto[i][j] == 'E':
+                return (i,j)
+
 
 
 
